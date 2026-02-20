@@ -1,79 +1,89 @@
-🎬 Sentiment Analysis Web App
-I built a simple Sentiment Analysis Web Application to understand the end-to-end workflow of an NLP project — from raw data to a deployed web app.
+# 🎬 Sentiment Analysis Web App  
 
-🚀 Project Overview
+I built a simple **Sentiment Analysis Web Application** to understand the end-to-end workflow of an NLP project — from raw data to a deployed web app.
 
-This project performs binary sentiment classification on movie reviews (Positive / Negative) using:
+---
 
-TF-IDF Vectorization
+## 🚀 Project Overview
 
-Logistic Regression
+This project performs **binary sentiment classification** on movie reviews (**Positive / Negative**) using:
 
-Flask Web Framework
+- TF-IDF Vectorization  
+- Logistic Regression  
+- Flask Web Framework  
 
 The application allows users to enter a movie review and instantly receive a sentiment prediction.
 
-📌 What I Did in This Project
+---
 
-Loaded and explored a dataset of movie reviews using pandas
+## 📌 What I Did in This Project
 
-Cleaned text data:
+- Loaded and explored a dataset of movie reviews using **pandas**
+- Cleaned text data:
+  - Converted text to lowercase  
+  - Removed punctuation  
+  - Removed extra spaces  
+- Converted text into numerical features using **TF-IDF**
+- Trained a **Logistic Regression** model
+- Achieved approximately **~89% accuracy**
+- Saved the trained model using **joblib**
+- Built a simple web interface using **Flask**
+- Integrated the ML model into the web app for real-time predictions
 
-Converted text to lowercase
+---
 
-Removed punctuation
-
-Removed extra spaces
-
-Converted text into numerical features using TF-IDF
-
-Trained a Logistic Regression model
-
-Achieved approximately ~89% accuracy
-
-Saved the trained model using joblib
-
-Built a simple web interface using Flask
-
-Integrated the ML model into the web app for real-time predictions
-
-🧠 Key Learnings
+## 🧠 Key Learnings
 
 This project helped me understand:
 
-How NLP data differs from structured numeric datasets
+- How NLP data differs from structured numeric datasets  
+- The importance of text preprocessing  
+- Feature extraction using TF-IDF  
+- Model training and evaluation workflow  
+- How to integrate ML models into web applications  
+- The complete end-to-end pipeline from raw data to working app  
 
-The importance of text preprocessing
+> The best way to learn Machine Learning is by building real projects.
 
-Feature extraction using TF-IDF
+---
 
-Model training and evaluation workflow
+## 🛠️ Tech Stack
 
-How to integrate ML models into web applications
+- Python  
+- pandas  
+- scikit-learn  
+- TF-IDF Vectorizer  
+- Logistic Regression  
+- joblib  
+- Flask  
 
-The complete end-to-end pipeline from raw data to working app
+---
 
-It reinforced an important lesson:
+## 💻 How to Run Locally
 
-The best way to learn Machine Learning is by building real projects.
-
-🛠️ Tech Stack
-
-Python
-pandas
-scikit-learn
-TF-IDF Vectorizer
-Logistic Regression
-joblib
-Flask
-
-💻 How to Run Locally
-
-Clone the repository:
+### 1️⃣ Clone the repository
+```bash
 git clone https://github.com/Farwa-Khalid/Movies_Review_Result.git
+```
 
-Navigate into the project:
+### 2️⃣ Navigate into the project
+```bash
 cd Movies_Review_Result
+```
 
-Run the Flask app:
+### 3️⃣ Install dependencies (if requirements.txt exists)
+```bash
+pip install -r requirements.txt
+```
+
+### 4️⃣ Run the Flask app
+```bash
 python application.py
+```
+
+### 5️⃣ Open in your browser
+```
+http://127.0.0.1:5000
+```
+
+
